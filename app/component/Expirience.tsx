@@ -1,7 +1,6 @@
 "use client"
 import React from 'react'
 import { motion } from "framer-motion"
-import { SocialIcon } from 'react-social-icons';
 
 type Props = {}
 
@@ -34,10 +33,7 @@ function Expirience({}: Props) {
         <div className='px-0  md:px-10 '>
             <h4 className='text-4xl font-light'>Ngan (Alvie) Nguyen</h4>
             <div className='flex space-x-2 my-2'>
-            <SocialIcon url="https://www.linkedin.com/in/ngoc-kim-ngan-nguyen-74b033219/"
-              fgColor = "gray"
-              bgColor = "transparent"
-            />
+          
             </div>
         </div>
     </article>
@@ -56,10 +52,7 @@ function Expirience({}: Props) {
         <div className='px-0  md:px-10 '>
             <h4 className='text-4xl font-light'>Gary Lou</h4>
             <div className='flex space-x-2 my-2'>
-            <SocialIcon url="https://www.linkedin.com/in/gary-lou-0726ba169/"
-              fgColor = "gray"
-              bgColor = "transparent"
-            />
+          
             </div>
         </div>
     </article>
@@ -78,10 +71,7 @@ function Expirience({}: Props) {
         <div className='px-0  md:px-10 '>
             <h4 className='text-4xl font-light'>Bui Van Khanh (Katie) Vo </h4>
             <div className='flex space-x-2 my-2'>
-            <SocialIcon url= "https://www.linkedin.com/in/bui-van-khanh-vo-88a673263/"
-              fgColor = "gray"
-              bgColor = "transparent"
-            />
+         
             </div>
         </div>
     </article>
@@ -100,10 +90,7 @@ function Expirience({}: Props) {
         <div className='px-0  md:px-10 '>
             <h4 className='text-4xl font-light'>Akilvish Paliwal</h4>
             <div className='flex space-x-2 my-2'>
-            <SocialIcon url= "https://www.linkedin.com/in/akilvish-paliwal/"
-              fgColor = "gray"
-              bgColor = "transparent"
-            />
+       
             </div>
         </div>
     </article>
@@ -122,10 +109,7 @@ function Expirience({}: Props) {
         <div className='px-0  md:px-10 '>
             <h4 className='text-4xl font-light'>Richard Wibowo</h4>
             <div className='flex space-x-2 my-2'>
-            <SocialIcon url= "https://www.linkedin.com/in/richard-wibowo/"
-              fgColor = "gray"
-              bgColor = "transparent"
-            />
+           
             </div>
         </div>
     </article>
