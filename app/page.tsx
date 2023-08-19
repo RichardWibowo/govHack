@@ -1,9 +1,7 @@
 import Expirience from "./component/Expirience";
-import Header from "./component/Header";
 import Hero from "./component/Hero";
-import Skill from "./component/Skill";
 import About from "./component/about";
-import Project from "./component/project";
+
 
 export default function Home() {
   return (
