@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .HeroButton {
+        @apply px-6 py-2  uppercase text-sm tracking-widest text-gray-500 transition-all
+    }
+
+    @layer utilities {
+        .HeroButton:hover {
+            @apply border rounded-full border-cyan-50 text-indigo-500;
+        }
+    }
+}
