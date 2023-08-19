@@ -1,6 +1,7 @@
 import Expirience from "./component/Expirience";
 import Hero from "./component/Hero";
 import About from "./component/about";
+import Top10 from "./component/top10";
 
 
 export default function Home() {
@@ -11,12 +12,16 @@ export default function Home() {
       <Hero />
     </section>
     
-    <section id = "about" className="snap-center">
+    <section id = "about" className="snap-start">
       <About />
     </section>
 
     <section id = "Expirience" className="snap-start">
       <Expirience />
+    </section>
+
+    <section id = "Top10" className="snap-start">
+      <Top10 />
     </section>
 
   </div>
