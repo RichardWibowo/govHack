@@ -24,7 +24,7 @@ function About({}: Props) {
             viewport = {{once : true}}
             transition = {{duration : 1.7}}
             src = "https://www.voicesofyouth.org/sites/voy/files/images/2021-04/earth_2.gif"
-            className = 'rb-10 md:rb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[500px]'
+            className = 'rb-10 md:rb-0 flex-shrink-0 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[500px]'
         />
         <div className=' px-0 md:px-10'>
         <h4 className='text-4xl font-semibold'>
