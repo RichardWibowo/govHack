@@ -13,14 +13,14 @@ function Expirience({}: Props) {
     transition = {{duration : 1.2}}
     className='h-screen flex relative overflow-hidden flex-col text-lft md:flex-row max-w-full px-10 justify-evenly mx-auto items-center'>
        
-       <h3 className='absolute top-24 uppercase 
+       <h3 className='absolute top-24 uppercase text-center
         tracking-[20px] text-gray-500 text-2xl'>Meet The Team</h3>
 
        
         <div className='w-full flex space-x-5 overflow-x-auto p-10 snap-x snap-mandatory items-center  scrollbar scrollbar-track-slate-900/20 scrollbar-thumb-sky-300/30'>
         
     <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 space-evenly w-[400px] h-fit md:w-[500px] xl:w-[600px] snap-center bg-slate-700 p-10
-    hover:opacity-100 opacity-50 cursor-pointer transition-opacity duration-200 overflow-hidden'>
+    hover:opacity-100 opacity-90 cursor-pointer transition-opacity duration-200 overflow-hidden'>
         <motion.img 
         initial = {{y : -50, opacity : 0}}
         whileInView = {{ y : 0, opacity : 1}}
@@ -39,7 +39,7 @@ function Expirience({}: Props) {
     </article>
 
     <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 space-evenly w-[400px] h-fit md:w-[500px] xl:w-[600px] snap-center bg-slate-700 p-10
-    hover:opacity-100 opacity-50 cursor-pointer transition-opacity duration-200 overflow-hidden'>
+    hover:opacity-100 opacity-90 cursor-pointer transition-opacity duration-200 overflow-hidden'>
         <motion.img 
         initial = {{y : -50, opacity : 0}}
         whileInView = {{ y : 0, opacity : 1}}
@@ -58,7 +58,7 @@ function Expirience({}: Props) {
     </article>
 
     <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 space-evenly w-[400px] h-fit md:w-[500px] xl:w-[600px] snap-center bg-slate-700 p-10
-    hover:opacity-100 opacity-50 cursor-pointer transition-opacity duration-200 overflow-hidden'>
+    hover:opacity-100 opacity-90 cursor-pointer transition-opacity duration-200 overflow-hidden'>
         <motion.img 
         initial = {{y : -50, opacity : 0}}
         whileInView = {{ y : 0, opacity : 1}}
@@ -69,7 +69,7 @@ function Expirience({}: Props) {
         alt = ""/>
 
         <div className='px-0  md:px-10 '>
-            <h4 className='text-4xl font-light'>Bui Van Khanh (Katie) Vo </h4>
+            <h4 className='text-3xl font-light'>Bui Van Khanh (Katie) Vo </h4>
             <div className='flex space-x-2 my-2'>
          
             </div>
@@ -77,7 +77,7 @@ function Expirience({}: Props) {
     </article>
 
     <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 space-evenly w-[400px] h-fit md:w-[500px] xl:w-[600px] snap-center bg-slate-700 p-10
-    hover:opacity-100 opacity-50 cursor-pointer transition-opacity duration-200 overflow-hidden'>
+    hover:opacity-100 opacity-90 cursor-pointer transition-opacity duration-200 overflow-hidden'>
         <motion.img 
         initial = {{y : -50, opacity : 0}}
         whileInView = {{ y : 0, opacity : 1}}
@@ -96,7 +96,7 @@ function Expirience({}: Props) {
     </article>
 
     <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 space-evenly w-[400px] h-fit md:w-[500px] xl:w-[600px] snap-center bg-slate-700 p-10
-    hover:opacity-100 opacity-50 cursor-pointer transition-opacity duration-200 overflow-hidden'>
+    hover:opacity-100 opacity-90 cursor-pointer transition-opacity duration-200 overflow-hidden'>
         <motion.img 
         initial = {{y : -50, opacity : 0}}
         whileInView = {{ y : 0, opacity : 1}}

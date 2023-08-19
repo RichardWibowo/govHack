@@ -23,7 +23,7 @@ function About({}: Props) {
             whileInView = {{ x : 0, opacity : 1}}
             viewport = {{once : true}}
             transition = {{duration : 1.7}}
-            src = "https://i.redd.it/1pmsjnk8f1g01.jpg"
+            src = "https://www.voicesofyouth.org/sites/voy/files/images/2021-04/earth_2.gif"
             className = 'rb-10 md:rb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[500px]'
         />
         <div className=' px-0 md:px-10'>
@@ -32,7 +32,7 @@ function About({}: Props) {
                 <span className='underline'> little background</span>
         </h4>
         <p className='text-base'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempor tempor lacus ac ultrices. Mauris eget rutrum mauris, quis egestas ante. Nullam pulvinar maximus risus vitae posuere. Proin eu dui sit amet urna blandit aliquam. Quisque posuere commodo mi, vitae mollis libero tempus eu. Integer convallis vestibulum quam, non venenatis nibh iaculis quis. Ut et ante vitae dolor vehicula venenatis id sit amet leo. Nulla ac commodo dolor. Etiam sollicitudin dictum volutpat. Morbi sit amet hendrerit dui. Fusce nec rutrum risus. Integer dapibus diam convallis placerat ullamcorper. Sed dictum ultrices metus. Proin mattis orci et diam malesuada, a facilisis arcu finibus. 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempor tempor lacus ac ultrices. Mauris eget rutrum mauris, quis egestas ante. Nullam pulvinar maximus risus vitae posuere. Proin eu dui sit amet urna blandit aliquam. Quisque posuere commodo mi, vitae 
         </p>
         </div>
     </motion.div>
