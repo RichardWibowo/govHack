@@ -20,8 +20,7 @@ function Conclusion({}: Props) {
         
         <div className=' px-0 md:px-10'>
         <h4 className='text-4xl font-semibold'>
-            To The 
-                <span className='underline'>Goverment </span>
+            To The Goverment
         </h4>
         <ul className="list-disc gap-5">
             <li className = "mt-3">Public-Private Partnerships: Foster collaborations between government bodies and private enterprises to jointly invest in EV charging infrastructure. This partnership ensures efficient deployment and maintenance of charging stations.</li>

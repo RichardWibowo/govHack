@@ -300,8 +300,7 @@ export default function Top10() {
 
   const containerStyles: React.CSSProperties = {
     position: 'relative',
-    height: '50vh',
-    width: '80vw',
+    width: '50vw',
   };
 
   const createLineChart = () => {
@@ -431,16 +430,16 @@ export default function Top10() {
         EV Registration Data 2022
       </h3>
 
-      <div className='px-2 w-[50%] flex space-x-5 overflow-x-auto p-10 snap-x snap-mandatory items-center scrollbar scrollbar-track-slate-900/20 scrollbar-thumb-sky-300/30'>
+      <div className='px-10 mr-10 w-[50%]  flex space-x-5 overflow-x-auto p-10 snap-x snap-mandatory items-center scrollbar scrollbar-track-slate-900/20 scrollbar-thumb-sky-300/30'>
         {vehicleData.map((vehicle, index) => (
           <article
             key={index}
-            className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 space-evenly w-[400px] h-fit md:w-[500px] xl:w-[600px] snap-center bg-slate-700 p-10 hover:opacity-100 opacity-90 cursor-pointer transition-opacity duration-200 overflow-hidden'
+            className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 space-evenly w-[400px] h-fit md:w-[400px] xl:w-[600px] snap-center bg-slate-700 p-10 hover:opacity-100 opacity-90 cursor-pointer transition-opacity duration-200 overflow-hidden'
           >
-            <div className='w-20 h-20 rounded-full xl:w-[200px] xl:h-[200px] overflow-hidden'>
+            <div className='w-20 h-10 rounded-full xl:w-[200px] xl:h-[200px] overflow-hidden'>
             </div>
 
-            <div className='px-0 md:px-10'>
+            <div className=' px-0 md:px-10'>
               <h4 className='text-4xl font-light'>
                 {vehicle.MAKE} {vehicle.model}
               </h4>

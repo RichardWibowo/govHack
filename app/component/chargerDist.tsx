@@ -20,7 +20,7 @@ function ChargerDist({}: Props) {
 
       <div className='flex relative flex-row gap-5'>
         <div className='w-[60%] relative' style={{ aspectRatio: '16 / 9' }}>
-          <img src="https://cdn.discordapp.com/attachments/1135457330524344381/1142436199278055504/image.png" className='w-full h-full' alt="Image 1"></img>
+          <img src="https://cdn.discordapp.com/attachments/1135457330524344381/1142693677983088680/image.png" className='w-full h-full' alt="Image 1"></img>
           <p className="absolute bottom-0 left-0 bg-gray-800 text-white p-2">EV/Postcode Data</p>
         </div>
         <div className='w-[60%] relative' style={{ aspectRatio: '16 / 9' }}>
