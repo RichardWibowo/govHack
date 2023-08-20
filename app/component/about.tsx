@@ -29,7 +29,7 @@ function About({}: Props) {
         <div className=' px-0 md:px-10'>
         <h4 className='text-4xl font-semibold'>
             here is a 
-                <span className='underline'> little background</span>
+                <span className=''> little background</span>
         </h4>
         <p className='text-base'>
         Our team has developed an application interface that displays a dashboard of insights, trends and graphs which explore the relationship between vehicle types and the uptake of EVs, the current issues with EV infrastructure, the potential reasons of particular consumer behaviour and the reasons why Australians might not be adopting EVs as rapidly as other countries.

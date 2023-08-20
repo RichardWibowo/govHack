@@ -300,7 +300,7 @@ export default function Top10() {
 
   const containerStyles: React.CSSProperties = {
     position: 'relative',
-    width: '50vw',
+    width: '40vw',
   };
 
   const createLineChart = () => {
@@ -434,9 +434,9 @@ export default function Top10() {
         {vehicleData.map((vehicle, index) => (
           <article
             key={index}
-            className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 space-evenly w-[400px] h-fit md:w-[400px] xl:w-[600px] snap-center bg-slate-700 p-10 hover:opacity-100 opacity-90 cursor-pointer transition-opacity duration-200 overflow-hidden'
+            className='flex flex-row md:flex-row rounded-lg items-center space-y-7 flex-shrink-0 space-evenly w-[400px] h-fit md:w-[400px] xl:w-[600px] snap-center bg-slate-700 p-10 hover:opacity-100 opacity-90 cursor-pointer transition-opacity duration-200 overflow-hidden'
           >
-            <div className='w-20 h-10 rounded-full xl:w-[200px] xl:h-[200px] overflow-hidden'>
+            <div className='w-20 h-5'>
             </div>
 
             <div className=' px-0 md:px-10'>
