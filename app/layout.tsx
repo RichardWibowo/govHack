@@ -1,7 +1,7 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'Richard Wibowo',
+  title: 'EV Rangers ',
 }
 
 export default function RootLayout({
