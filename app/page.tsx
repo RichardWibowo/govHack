@@ -26,7 +26,7 @@ export default function Home() {
       <Top10 />
     </section>
 
-    <section id = "ChargerDist" className="snap-start">
+    <section id = "ChargerDist" className="snap-center">
       <ChargerDist />
     </section>
 
