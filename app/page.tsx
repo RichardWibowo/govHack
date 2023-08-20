@@ -13,15 +13,15 @@ export default function Home() {
       <Hero />
     </section>
     
-    <section id = "about" className="snap-start">
+    <section id = "about" className="snap-center">
       <About />
     </section>
 
-    <section id = "Expirience" className="snap-start">
+    <section id = "Expirience" className="snap-center">
       <Expirience />
     </section>
 
-    <section id = "Top10" className="snap-start">
+    <section id = "Top10" className="snap-center">
       <Top10 />
     </section>
 
