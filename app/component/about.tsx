@@ -32,7 +32,8 @@ function About({}: Props) {
                 <span className='underline'> little background</span>
         </h4>
         <p className='text-base'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempor tempor lacus ac ultrices. Mauris eget rutrum mauris, quis egestas ante. Nullam pulvinar maximus risus vitae posuere. Proin eu dui sit amet urna blandit aliquam. Quisque posuere commodo mi, vitae 
+        Our team has developed an application interface that displays a dashboard of insights, trends and graphs which explore the relationship between vehicle types and the uptake of EVs, the current issues with EV infrastructure, the potential reasons of particular consumer behaviour and the reasons why Australians might not be adopting EVs as rapidly as other countries.
+        Under the dashboards and metrics, we also provide relevant policy measures and incentives that we believe could help stimulate EV uptake, and expand the charging infrastructure in each state and territory of Australia.
         </p>
         </div>
     </motion.div>
