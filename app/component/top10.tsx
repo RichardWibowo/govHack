@@ -298,6 +298,12 @@ export default function Top10() {
   const scatterChartRef = useRef<HTMLCanvasElement | null>(null);
   const bevPhevChartRef = useRef<HTMLCanvasElement | null>(null);
 
+  const containerStyles = {
+    position: 'relative',
+    height: '53vh',
+    width: '80vw',
+  };
+
   const createLineChart = () => {
     const ctx = lineChartRef.current?.getContext('2d');
     if (ctx) {
@@ -449,7 +455,10 @@ export default function Top10() {
         ))}
       </div>
 
-      <div className='w-full h-[65%] bg-white flex space-x-5 overflow-x-auto snap-x snap-mandatory items-center scrollbar scrollbar-track-slate-900/20 scrollbar-thumb-sky-300/30'>
+      <div 
+        style={containerStyles} 
+        className=" bg-white flex space-x-5 overflow-x-auto snap-x snap-mandatory items-center scrollbar scrollbar-track-slate-900/20 scrollbar-thumb-sky-300/30"
+      >
       <canvas
         ref={lineChartRef}
         className='mt-4'

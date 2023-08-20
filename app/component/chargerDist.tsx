@@ -30,7 +30,7 @@ function ChargerDist({}: Props) {
       </div>
 
       <div className=' flex relative'>
-      <p className='text-base'> To emphasize their incentive to shift the demand to BEV, Victoria’s, as well as Australia’s, government deploys high-power charging stations at the same rate and location as where EVs are registered (figure 4). This not only ensures the residents’ convenience but also highlights the incentive to transfer to complete green transportation in the future.</p>
+      <p className='text-base'> To emphasize their incentive to shift the demand to BEV, Victoria’s, as well as Australia’s, government deploys high-power charging stations at the same rate and location as where EVs are registered. This not only ensures the residents’ convenience but also highlights the incentive to transfer to complete green transportation in the future.</p>
       </div>
     </motion.div>
   )
