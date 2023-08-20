@@ -1,6 +1,7 @@
 import Expirience from "./component/Expirience";
 import Hero from "./component/Hero";
 import About from "./component/about";
+import ChargerDist from "./component/chargerDist";
 import Top10 from "./component/top10";
 
 
@@ -22,6 +23,10 @@ export default function Home() {
 
     <section id = "Top10" className="snap-start">
       <Top10 />
+    </section>
+
+    <section id = "Top10" className="snap-start">
+      <ChargerDist />
     </section>
 
   </div>

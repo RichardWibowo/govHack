@@ -294,10 +294,12 @@ const vehicleData: VehicleData[] = [
     }
 ];
 export default function Top10() {
-  const chartRef = useRef<HTMLCanvasElement | null>(null);
+  const lineChartRef = useRef<HTMLCanvasElement | null>(null);
+  const scatterChartRef = useRef<HTMLCanvasElement | null>(null);
+  const bevPhevChartRef = useRef<HTMLCanvasElement | null>(null);
 
   const createLineChart = () => {
-    const ctx = chartRef.current?.getContext('2d');
+    const ctx = lineChartRef.current?.getContext('2d');
     if (ctx) {
       const months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN'];
       const datasets = vehicleData.map(vehicle => ({
@@ -317,13 +319,98 @@ export default function Top10() {
     }
   };
 
+  const createScatterChart = () => {
+    const ctx = scatterChartRef.current?.getContext('2d');
+    if (ctx) {
+      const priceData = vehicleData.map(vehicle => parseFloat(vehicle.Price.replace('$', '').replace(',', '')));
+      const rangeData = vehicleData.map(vehicle => vehicle["All electric range (WLTP) (KM)"]);
+
+      new Chart(ctx, {
+        type: 'scatter',
+        data: {
+          datasets: [
+            {
+              label: 'Price vs Range',
+              data: priceData.map((price, index) => ({ x: price, y: rangeData[index] })),
+              borderColor: 'rgba(75, 192, 192, 1)',
+              borderWidth: 1,
+              pointRadius: 5,
+              pointBackgroundColor: 'rgba(75, 192, 192, 1)',
+              fill: false,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            x: {
+              type: 'linear',
+              position: 'bottom',
+              title: {
+                display: true,
+                text: 'Price ($)',
+              },
+            },
+            y: {
+              title: {
+                display: true,
+                text: 'All electric range (WLTP) (KM)',
+              },
+            },
+          },
+        },
+      });
+    }
+  };
+
+  const createBevPhevChart = () => {
+    const ctx = bevPhevChartRef.current?.getContext('2d');
+    if (ctx) {
+      const bevPrices = vehicleData
+        .filter(vehicle => vehicle.Type === 'BEV')
+        .map(vehicle => parseFloat(vehicle.Price.replace('$', '').replace(',', '')));
+
+      const phevPrices = vehicleData
+        .filter(vehicle => vehicle.Type === 'PHEV')
+        .map(vehicle => parseFloat(vehicle.Price.replace('$', '').replace(',', '')));
+
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['BEV', 'PHEV'],
+          datasets: [
+            {
+              label: 'BEV vs PHEV Pricing',
+              data: [bevPrices.reduce((a, b) => a + b, 0) / bevPrices.length, phevPrices.reduce((a, b) => a + b, 0) / phevPrices.length],
+              backgroundColor: ['rgba(75, 192, 192, 0.5)', 'rgba(255, 99, 132, 0.5)'],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+              title: {
+                display: true,
+                text: 'Average Price ($)',
+              },
+            },
+          },
+        },
+      });
+    }
+  };
+
   const getRandomColor = () => {
     return `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;
   };
 
   useEffect(() => {
     createLineChart();
+    createScatterChart();
+    createBevPhevChart();
   }, []);
+
 
   return (
     <motion.div
@@ -335,10 +422,10 @@ export default function Top10() {
 
 
       <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
-        Best EV Sales 2022
+        EV Registration Data 2022
       </h3>
 
-      <div className='w-full flex space-x-5 overflow-x-auto p-10 snap-x snap-mandatory items-center scrollbar scrollbar-track-slate-900/20 scrollbar-thumb-sky-300/30'>
+      <div className='px-2 w-[50%] flex space-x-5 overflow-x-auto p-10 snap-x snap-mandatory items-center scrollbar scrollbar-track-slate-900/20 scrollbar-thumb-sky-300/30'>
         {vehicleData.map((vehicle, index) => (
           <article
             key={index}
@@ -348,15 +435,6 @@ export default function Top10() {
             </div>
 
             <div className='px-0 md:px-10'>
-            <motion.img
-              initial={{ y: -50, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1.2 }}
-              src={vehicle.URL}
-              className=''
-              alt=''
-            />
               <h4 className='text-4xl font-light'>
                 {vehicle.MAKE} {vehicle.model}
               </h4>
@@ -371,11 +449,23 @@ export default function Top10() {
         ))}
       </div>
 
+      <div className='w-full h-[65%] bg-white flex space-x-5 overflow-x-auto snap-x snap-mandatory items-center scrollbar scrollbar-track-slate-900/20 scrollbar-thumb-sky-300/30'>
       <canvas
-        ref={chartRef}
+        ref={lineChartRef}
         className='mt-4'
-        style={{ maxHeight: '50%', maxWidth: '50%' }}
       ></canvas>
+
+      <canvas
+        ref={scatterChartRef}
+        className='mt-4'
+      ></canvas>
+
+      <canvas
+        ref={bevPhevChartRef}
+        className='mt-4'
+      ></canvas>  
+      </div>
+
     </motion.div>
   );
 }
