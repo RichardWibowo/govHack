@@ -298,9 +298,9 @@ export default function Top10() {
   const scatterChartRef = useRef<HTMLCanvasElement | null>(null);
   const bevPhevChartRef = useRef<HTMLCanvasElement | null>(null);
 
-  const containerStyles = {
+  const containerStyles: React.CSSProperties = {
     position: 'relative',
-    height: '53vh',
+    height: '50vh',
     width: '80vw',
   };
 
