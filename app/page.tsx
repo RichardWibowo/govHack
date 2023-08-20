@@ -1,3 +1,4 @@
+import Conclusion from "./component/Conclusion";
 import Expirience from "./component/Expirience";
 import Hero from "./component/Hero";
 import About from "./component/about";
@@ -25,10 +26,13 @@ export default function Home() {
       <Top10 />
     </section>
 
-    <section id = "Top10" className="snap-start">
+    <section id = "ChargerDist" className="snap-start">
       <ChargerDist />
     </section>
 
+    <section id = "Closing" className="snap-start">
+      <Conclusion />
+    </section>
   </div>
   )
 }
